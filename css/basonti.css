@@ -1,0 +1,41 @@
+/* =========================
+   BASONTI SAFE OVERRIDE
+   ========================= */
+
+:root {
+  --primary-color: #F2B705;
+  --secondary-color: #D99A00;
+  --custom-btn-bg-color: #F2B705;
+  --custom-btn-bg-hover-color: #D99A00;
+}
+
+/* Navbar color only */
+.navbar {
+  background-color: #F2B705 !important;
+}
+
+/* Buttons */
+.custom-btn {
+  background-color: #F2B705 !important;
+  color: #000 !important;
+}
+
+.custom-btn:hover {
+  background-color: #D99A00 !important;
+  color: #fff !important;
+}
+
+/* Headings accent */
+.section-title,
+.site-footer-title {
+  color: #000 !important;
+}
+
+/* Footer */
+.site-footer-top {
+  background-color: #F2B705 !important;
+}
+/* NAVBAR MENU HOVER COLOR = BLACK */
+.navbar-nav .nav-link:hover {
+    color: #000000 !important;
+}
