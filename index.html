@@ -561,16 +561,22 @@ https://templatemo.com/tm-583-festava-live
                                 <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel" aria-labelledby="nav-ContactForm-tab">
                
 									<form class="custom-form contact-form mb-5 mb-lg-0"
-      						action="https://formsubmit.co/lalbaganjamrultala@gmail.com"
-     						method="POST"
-      						role="form"
-      						onsubmit="showSuccessPopup()">
+      action="https://formsubmit.co/lalbaganjamrultala@gmail.com"
+      method="POST"
+      role="form">
 
-    <!-- FormSubmit settings -->
+    <!-- FormSubmit config -->
     <input type="hidden" name="_subject" value="New Contact Form Message">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="index.html">
+
+    <!-- Success popup text -->
+    <input type="hidden" name="_confirmation"
+           value="✅ Thank you! Your message has been sent successfully.">
+
+    <!-- Redirect after success -->
+    <input type="hidden" name="_next"
+           value="https://lalbaganjamrultala.github.io/web/">
 
     <div class="contact-form-body">
         <div class="row">
@@ -585,7 +591,6 @@ https://templatemo.com/tm-583-festava-live
             </div>
         </div>
 
-        <!-- FIXED mobile number field -->
         <input type="tel" name="mobile" class="form-control"
                placeholder="Mobile No" required>
 
@@ -593,16 +598,13 @@ https://templatemo.com/tm-583-festava-live
                   placeholder="Message"></textarea>
 
         <div class="col-lg-4 col-md-10 col-8 mx-auto">
-            <button type="submit" class="form-control">Send message</button>
+            <button type="submit" class="form-control">
+                Send message
+            </button>
         </div>
     </div>
 </form>
 
-<script>
-function showSuccessPopup() {
-    alert("✅ Thank you! Your message has been sent successfully.");
-}
-</script>
 
                                 </div>
 
@@ -775,5 +777,6 @@ T e m p l a t e M o
     </body>
 
 </html>
+
 
 
