@@ -559,35 +559,50 @@ https://templatemo.com/tm-583-festava-live
 
                             <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel" aria-labelledby="nav-ContactForm-tab">
-                <form class="custom-form contact-form mb-5 mb-lg-0"
-						action="https://formsubmit.co/lalbaganjamrultala@gmail.com"
-						method="POST"
-						role="form">
+               
+									<form class="custom-form contact-form mb-5 mb-lg-0"
+      						action="https://formsubmit.co/lalbaganjamrultala@gmail.com"
+     						method="POST"
+      						role="form"
+      						onsubmit="showSuccessPopup()">
 
-									<input type="hidden" name="_subject" value="New Contact Form Message">
-									<input type="hidden" name="_captcha" value="false">
-									<input type="hidden" name="_template" value="table">
+    <!-- FormSubmit settings -->
+    <input type="hidden" name="_subject" value="New Contact Form Message">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="index.html">
 
-								<div class="contact-form-body">
-							<div class="row">
-						<div class="col-lg-6 col-md-6 col-12">
-						<input type="text" name="name" class="form-control" placeholder="Full name" required>
-						</div>
+    <div class="contact-form-body">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <input type="text" name="name" class="form-control"
+                       placeholder="Full name" required>
+            </div>
 
-						<div class="col-lg-6 col-md-6 col-12">
-						<input type="email" name="email" class="form-control" placeholder="Email address" required>
-						</div>
-						</div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <input type="email" name="email" class="form-control"
+                       placeholder="Email address" required>
+            </div>
+        </div>
 
-						<input type="number" name="" class="form-control" placeholder="Mobile No">
+        <!-- FIXED mobile number field -->
+        <input type="tel" name="mobile" class="form-control"
+               placeholder="Mobile No" required>
 
-						<textarea name="message" rows="3" class="form-control" placeholder="Message"></textarea>
+        <textarea name="message" rows="3" class="form-control"
+                  placeholder="Message"></textarea>
 
-						<div class="col-lg-4 col-md-10 col-8 mx-auto">
-						<button type="submit" class="form-control">Send message</button>
-						</div>
-					</div>
-				</form>
+        <div class="col-lg-4 col-md-10 col-8 mx-auto">
+            <button type="submit" class="form-control">Send message</button>
+        </div>
+    </div>
+</form>
+
+<script>
+function showSuccessPopup() {
+    alert("✅ Thank you! Your message has been sent successfully.");
+}
+</script>
 
                                 </div>
 
@@ -760,4 +775,5 @@ T e m p l a t e M o
     </body>
 
 </html>
+
 
