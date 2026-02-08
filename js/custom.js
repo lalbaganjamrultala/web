@@ -83,3 +83,53 @@
   });
 
 })(window.jQuery);
+/* =========================
+   COUNTDOWN TIMER
+========================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const targetDate = new Date("2027-02-11T06:00:00").getTime();
+
+  const timeElements = {
+    days: document.getElementById("days"),
+    hours: document.getElementById("hours"),
+    seconds: document.getElementById("seconds")
+  };
+
+  function flip(element, newValue) {
+    if (!element || element.textContent === newValue) return;
+
+    element.classList.add("flip");
+
+    setTimeout(() => {
+      element.textContent = newValue;
+      element.classList.remove("flip");
+    }, 400);
+  }
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      flip(timeElements.days, "00");
+      flip(timeElements.hours, "00");
+      flip(timeElements.seconds, "00");
+      clearInterval(timer);
+      return;
+    }
+
+    const days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, "0");
+    const hours = String(Math.floor((distance / (1000 * 60 * 60)) % 24)).padStart(2, "0");
+    const seconds = String(Math.floor((distance / 1000) % 60)).padStart(2, "0");
+
+    flip(timeElements.days, days);
+    flip(timeElements.hours, hours);
+    flip(timeElements.seconds, seconds);
+  }
+
+  updateCountdown();
+  const timer = setInterval(updateCountdown, 1000);
+
+});
