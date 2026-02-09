@@ -81,3 +81,49 @@
   transform: rotateX(90deg);
   opacity: 0;
 }
+/* =========================
+   COUNTDOWN RESPONSIVE FIX
+   ========================= */
+
+/* Tablets & small screens */
+@media (max-width: 768px) {
+  .countdown {
+    gap: 15px;
+  }
+
+  .time-box {
+    min-width: 80px;
+    padding: 12px 14px;
+  }
+
+  .time-number {
+    font-size: 26px;
+  }
+
+  .time-label {
+    font-size: 12px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .countdown {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .time-box {
+    min-width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .time-number {
+    font-size: 22px;
+  }
+
+  .time-label {
+    font-size: 11px;
+  }
+}
