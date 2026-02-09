@@ -81,6 +81,10 @@
   transform: rotateX(90deg);
   opacity: 0;
 }
+/* Menu item color change */
+.navbar-nav .nav-link {
+    color: red !important;
+}
 
 /* =========================
    COUNTDOWN BASONTI THEME
