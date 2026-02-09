@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const timeElements = {
     days: document.getElementById("days"),
     hours: document.getElementById("hours"),
+    minutes: document.getElementById("minutes"), // 👈 ADD
     seconds: document.getElementById("seconds")
   };
 
@@ -115,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (distance <= 0) {
       flip(timeElements.days, "00");
       flip(timeElements.hours, "00");
+      flip(timeElements.minutes, "00"); // 👈 ADD
       flip(timeElements.seconds, "00");
       clearInterval(timer);
       return;
@@ -122,10 +124,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, "0");
     const hours = String(Math.floor((distance / (1000 * 60 * 60)) % 24)).padStart(2, "0");
+    const minutes = String(Math.floor((distance / (1000 * 60)) % 60)).padStart(2, "0"); // 👈 ADD
     const seconds = String(Math.floor((distance / 1000) % 60)).padStart(2, "0");
 
     flip(timeElements.days, days);
     flip(timeElements.hours, hours);
+    flip(timeElements.minutes, minutes); // 👈 ADD
     flip(timeElements.seconds, seconds);
   }
 
