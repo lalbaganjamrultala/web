@@ -81,6 +81,29 @@
   transform: rotateX(90deg);
   opacity: 0;
 }
+
+/* =========================
+   COUNTDOWN BASONTI THEME
+   ========================= */
+
+/* Timer box background = Basonti */
+.time-box {
+    background: var(--primary-color);
+    color: #000;
+}
+
+/* Numbers (days, hours, seconds) */
+.time-box span,
+.time-number {
+    color: #000;
+}
+
+/* Labels (DAYS / HOURS / SECONDS) */
+.time-box small {
+    color: #000;
+    opacity: 0.9;
+}
+
 /* =========================
    COUNTDOWN RESPONSIVE FIX
    ========================= */
