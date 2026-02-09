@@ -25,7 +25,7 @@ $.each(sectionArray, function(index, value){
         e.preventDefault();
         $('html, body').animate({
             'scrollTop':offsetClick
-        }, 300)
+        }, 1200)
     });
     
 });
