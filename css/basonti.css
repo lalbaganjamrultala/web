@@ -259,4 +259,16 @@
     .countdown .time-box p {
         font-size: 10px !important;
     }
+}.countdown-title {
+    font-size: 26px;          /* medium size */
+    font-weight: 600;
+    color: var(--primary-color); /* Basonti colour */
+    margin-bottom: 4px;
 }
+
+.countdown-subtitle {
+    font-size: 14px;
+    color: var(--primary-color); /* same Basonti tone */
+    opacity: 0.9;
+}
+
