@@ -150,3 +150,113 @@
     font-size: 11px;
   }
 }
+/* =========================
+   COUNTDOWN TYPOGRAPHY FIX
+   ========================= */
+
+.time-box {
+    background: var(--primary-color);
+    padding: 18px 16px;
+    min-width: 110px;
+    text-align: center;
+}
+
+/* Big number fills the block */
+.time-box span,
+.time-number {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    color: #000;
+    display: block;
+}
+
+/* Small label text */
+.time-box small {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 6px;
+    display: block;
+    color: #000;
+    opacity: 0.85;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .time-box {
+        min-width: 95px;
+        padding: 14px;
+    }
+
+    .time-box span,
+    .time-number {
+        font-size: 36px;
+    }
+
+    .time-box small {
+        font-size: 11px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .time-box {
+        min-width: 85px;
+        padding: 12px;
+    }
+
+    .time-box span,
+    .time-number {
+        font-size: 30px;
+    }
+
+    .time-box small {
+        font-size: 10px;
+    }
+}
+/* =========================
+   FORCE COUNTDOWN TYPOGRAPHY
+   ========================= */
+
+/* Make number fill the block */
+.countdown .time-box .time-number {
+    font-size: 48px !important;
+    font-weight: 800;
+    line-height: 1;
+    color: #000 !important;
+    display: block;
+}
+
+/* Force label text (Days / Hours / Seconds) to be small */
+.countdown .time-box small,
+.countdown .time-box .label,
+.countdown .time-box p {
+    font-size: 11px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 6px;
+    color: #000 !important;
+    opacity: 0.85;
+}
+
+/* Center content vertically */
+.countdown .time-box {
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width: 480px) {
+    .countdown .time-box .time-number {
+        font-size: 30px !important;
+    }
+
+    .countdown .time-box small,
+    .countdown .time-box .label,
+    .countdown .time-box p {
+        font-size: 10px !important;
+    }
+}
