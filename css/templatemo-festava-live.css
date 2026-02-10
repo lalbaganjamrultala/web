@@ -1228,4 +1228,8 @@ strong {
     margin-top: 1rem;
   }
 }
+.brand-bold {
+    font-weight: 800;   /* extra bold */
+    font-size: 1.4em;   /* slightly bigger than rest */
+}
 
