@@ -296,4 +296,33 @@
     color: var(--primary-color); /* same Basonti tone */
     opacity: 0.9;
 }
+.countdown-subtitle {
+    font-size: 14px;
+    color: var(--primary-color);
+    opacity: 0.9;
+}
+/* =========================
+   MOBILE NAVBAR DROPDOWN FIX
+   ========================= */
+
+@media (max-width: 991px) {
+
+    /* Only when mobile menu is opened */
+    .navbar-collapse.show {
+        background-color: #F2B705 !important; /* Basonti */
+        padding: 15px;
+    }
+
+    /* Keep original red color */
+    .navbar-collapse.show .nav-link {
+        color: red !important;
+    }
+
+    /* Keep hover effect */
+    .navbar-collapse.show .nav-link:hover {
+        color: #000000 !important;
+    }
+
+}
+
 
