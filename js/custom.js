@@ -137,3 +137,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const timer = setInterval(updateCountdown, 1000);
 
 });
+/* =========================
+   TRANSPARENT NAVBAR SCROLL
+========================= */
+
+window.addEventListener("scroll", function () {
+  var navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
