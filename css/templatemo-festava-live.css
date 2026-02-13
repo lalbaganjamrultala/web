@@ -1242,4 +1242,7 @@ strong {
     font-weight: 800;    /* bold */
     margin-top: 5px;
 }
+.services-info p {
+    color: #F4C430 !important;
+}
 
