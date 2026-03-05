@@ -145,3 +145,22 @@ window.addEventListener("scroll", function () {
   var navbar = document.querySelector(".navbar");
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
+
+/* =========================
+   POPUP MESSAGE
+========================= */
+
+window.addEventListener("load", function () {
+  const popup = document.getElementById("popupMessage");
+
+  if (popup) {
+    popup.style.display = "flex";
+  }
+});
+
+function closePopup() {
+  const popup = document.getElementById("popupMessage");
+  if (popup) {
+    popup.style.display = "none";
+  }
+}
