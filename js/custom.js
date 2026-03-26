@@ -150,12 +150,12 @@ window.addEventListener("scroll", function () {
    POPUP MESSAGE
 ========================= */
 
-window.addEventListener("load", function () {
-  const popup = document.getElementById("popupMessage");
+ window.addEventListener("load", function () {
+ const popup = document.getElementById("popupMessage");
 
   if (popup) {
-    popup.style.display = "flex";
-  }
+   popup.style.display = "none";       //"flex"; 
+ }
 });
 
 function closePopup() {
