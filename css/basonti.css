@@ -361,4 +361,68 @@
   font-size:26px;
   cursor:pointer;
 }
+/* =========================
+   VIDEO GALARY
+   ========================= */
+.video-card {
+    position: relative;
+    width: 100%;
+    height: 300px; /* fixed height for uniform look */
+    overflow: hidden;
+    cursor: pointer;
+    background: #000;
+}
 
+.video-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔥 IMPORTANT */
+    display: block;
+}
+
+.video-card iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+.video-section {
+    padding: 0; /* remove top-bottom gap if you want full coverage */
+}
+
+.video-card {
+    border-radius: 0; /* remove rounded edges for seamless grid */
+    margin: 0;
+}
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 70px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.video-card:hover .play-btn {
+    background: red;
+    transform: translate(-50%, -50%) scale(1.1);
+}
