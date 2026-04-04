@@ -18,17 +18,25 @@
 /* Transparent Navbar */
 .navbar {
     background: transparent !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    box-shadow: none !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: 0.4s ease;
 }
-
 
 /* Solid background after scroll */
 .navbar.scrolled {
-    background: #F2B705 !important;
-    transition: 0.3s ease;
+    background: #F2B705 !important;  /* Basonti */
 }
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+
+
 
 /* Buttons */
 .custom-btn {
@@ -422,23 +430,4 @@
 .video-card:hover .play-btn {
     background: red;
     transform: translate(-50%, -50%) scale(1.1);
-}
-
-section {
-    opacity: 1;
-    transform: none;
-    transition: all 0.6s ease;
-}
-
-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-}
-.pricing-thumb,
-.about-text-wrap,
-.video-card {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    border-radius: 12px;
 }
