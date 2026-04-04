@@ -166,11 +166,12 @@ function closePopup() {
 }
 const sections = document.querySelectorAll("section");
 
-window.addEventListener("scroll", () => {
+sections.forEach(sec => sec.classList.add("animate"));
+
+window.addEventListener("load", () => {
+  const sections = document.querySelectorAll("section");
+
   sections.forEach(sec => {
-    const top = sec.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      sec.classList.add("show");
-    }
+    sec.classList.add("show");
   });
 });

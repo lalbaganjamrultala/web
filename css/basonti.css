@@ -18,17 +18,13 @@
 /* Transparent Navbar */
 .navbar {
     background: transparent !important;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    transition: 0.4s ease;
 }
+
 
 /* Solid background after scroll */
 .navbar.scrolled {
-    background: #F2B705 !important;  /* Basonti */
+    background: #F2B705 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 .navbar {
     backdrop-filter: blur(10px);
@@ -431,14 +427,16 @@
 }
 
 section {
-    opacity: 0;
-    transform: translateY(40px);
+    opacity: 1;
+    transform: none;
     transition: all 0.6s ease;
 }
 
 section.show {
     opacity: 1;
     transform: translateY(0);
+}
+
 }
 .pricing-thumb,
 .about-text-wrap,
