@@ -18,19 +18,17 @@
 /* Transparent Navbar */
 .navbar {
     background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
 }
 
 
 /* Solid background after scroll */
 .navbar.scrolled {
     background: #F2B705 !important;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
 }
-.navbar {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1) !important;
-}
-
 
 /* Buttons */
 .custom-btn {
