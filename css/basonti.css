@@ -30,9 +30,10 @@
 .navbar.scrolled {
     background: #F2B705 !important;  /* Basonti */
 }
-
-
-
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1) !important;
+}
 
 
 /* Buttons */
@@ -427,4 +428,21 @@
 .video-card:hover .play-btn {
     background: red;
     transform: translate(-50%, -50%) scale(1.1);
+}
+
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.pricing-thumb,
+.about-text-wrap,
+.video-card {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 12px;
 }
