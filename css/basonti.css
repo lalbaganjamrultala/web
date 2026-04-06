@@ -442,3 +442,9 @@ section.show {
     opacity: 1;
     transform: translateY(0);
 }
+.pricing-thumb,
+.about-text-wrap,
+.video-card {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 12px;
+}
