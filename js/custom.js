@@ -166,11 +166,18 @@ function closePopup() {
 }
 const sections = document.querySelectorAll("section");
 
-window.addEventListener("scroll", () => {
+function showSectionsOnLoad() {
   sections.forEach(sec => {
     const top = sec.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
+
+    if (top < window.innerHeight) {
       sec.classList.add("show");
     }
   });
-});
+}
+
+// Run on page load
+window.addEventListener("load", showSectionsOnLoad);
+
+// Run on scroll
+window.addEventListener("scroll", showSectionsOnLoad);
