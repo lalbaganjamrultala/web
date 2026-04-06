@@ -448,3 +448,85 @@ section.show {
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     border-radius: 12px;
 }
+/* Alpona Stype on headings */
+
+.alpona-real {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0 70px;
+    font-weight: 600;
+}
+
+/* Left Alpona */
+.alpona-real::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, white 2px, transparent 3px),
+                radial-gradient(circle, white 2px, transparent 3px);
+    background-size: 15px 15px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+/* Right Alpona */
+.alpona-real::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, white 2px, transparent 3px),
+                radial-gradient(circle, white 2px, transparent 3px);
+    background-size: 15px 15px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+/* Alpona Stype on headings (In Black)*/
+.alpona-black {
+    position: relative;
+    display: inline-block;
+    color: #000000; /* text color */
+    padding: 0 70px;
+    font-weight: 600;
+}
+
+/* Left Alpona */
+.alpona-black::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, black 2px, transparent 3px),
+                radial-gradient(circle, black 2px, transparent 3px);
+    background-size: 15px 15px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+/* Right Alpona */
+.alpona-black::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, black 2px, transparent 3px),
+                radial-gradient(circle, black 2px, transparent 3px);
+    background-size: 15px 15px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
