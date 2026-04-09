@@ -530,3 +530,26 @@ section.show {
     border-radius: 50%;
     opacity: 0.9;
 }
+.google-review-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.google-review-btn a {
+    background: #ea4335; /* Google red */
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.google-review-btn a:hover {
+    background: #c5221f;
+    transform: scale(1.05);
+}
